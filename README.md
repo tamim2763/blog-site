@@ -1,3 +1,9 @@
+### 🚀 Live Demo:
+
+[**View the live website!**](https://blog-site-rb3m.onrender.com/)
+
+---
+
 ### Simple Blog Project
 
 A simple blog application built with Node.js and Express. This was a learning project to understand the fundamentals of backend web development, routing, and CRUD operations.
