@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+    <div class="container">
+        <form class="formContainer" action="/update" method="post">
+            <h1>Write your blog</h1>
+            <!-- <input type="text" name="article" value= "" > -->
+            <!-- <textarea name="article" rows="10"><%= post.content %></textarea> -->
+            <textarea class="form-control container" id="exampleFormControlTextarea1" rows="5" name="article"><%= post.content %></textarea>
+            <input type="hidden" name="postId" value="<%= post.id %>">
+            <input type="submit" value="publish">
+        </form>
+    </div>
+<%- include("partials/footer.ejs") %>

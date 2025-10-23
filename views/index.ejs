@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+    <div class="container">
+        <form class="formContainer" action="/submit" method="post">
+            <h1>Write your blog</h1>
+            <!-- <input type="text" name="article"> -->
+            <!-- <textarea name="article" rows="10" placeholder="write your blogs here..."></textarea> -->
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="article"></textarea>
+            <button type="submit" class="btn btn-success">Publish</button>
+        </form>
+    </div>
+    <% if (locals.articleArray) { %>
+        <div class="container">
+            <ul class="blog-list">
+                <% for (let i=articleArray.length-1;i>=0;i--) { %> 
+                    <li>
+                        <%= articleArray[i].content.substring(0, 150) %> 
+                        <div class="link-container">
+                            <a href="/post/<%= articleArray[i].id %>"><button type="button" class="btn btn-info">Read More</button></a>
+                            <a href="/edit/<%= articleArray[i].id %>"><button type="button" class="btn btn-primary">Edit</button></a>
+                            <a href="/delete/<%= articleArray[i].id %>"><button type="button" class="btn btn-danger">Delete</button></a>
+                        </div>
+                    </li>
+                <% } %> 
+            </ul>
+        </div> 
+    <% } %> 
+<%- include("partials/footer.ejs") %>
