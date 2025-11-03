@@ -4,11 +4,13 @@
 
 ---
 
-### Simple Blog Project
+### Node.js & Express Blog
 
-A simple blog application built with Node.js and Express. This was a learning project to understand the fundamentals of backend web development, routing, and CRUD operations.
+A dynamic, full-stack blog application built with Node.js, Express, and EJS.
 
-Blogs are stored temporarily in server memory and will be reset if the server restarts.
+This project demonstrates core backend web development concepts. It features a complete **CRUD** (Create, Read, Update, Delete) API that handles blog posts, renders them using **server-side rendering** (SSR), and manages **dynamic routing** for individual posts.
+
+Posts are stored in-memory, demonstrating data persistence within a server's lifecycle. The front-end is enhanced with client-side JavaScript (jQuery) to style posts dynamically.
 
 ### Features
 
