@@ -29,7 +29,7 @@ Blogs are stored temporarily in server memory and will be reset if the server re
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/tamim2763/blog-site.git](https://github.com/tamim2763/blog-site.git)
+    git clone https://github.com/tamim2763/blog-site.git
     ```
 2.  Navigate to the project directory:
     ```bash
