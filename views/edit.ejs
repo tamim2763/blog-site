@@ -6,7 +6,7 @@
             <!-- <textarea name="article" rows="10"><%= post.content %></textarea> -->
             <textarea class="form-control container" id="exampleFormControlTextarea1" rows="5" name="article"><%= post.content %></textarea>
             <input type="hidden" name="postId" value="<%= post.id %>">
-            <input type="submit" value="publish">
+            <input type="submit" value="publish" class="btn btn-success">
         </form>
     </div>
 <%- include("partials/footer.ejs") %>
